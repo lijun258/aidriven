@@ -1,0 +1,13 @@
+name: Check In
+
+on:
+  workflow_dispatch: # 支持手动触发签到
+
+jobs:
+  checkin:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check In Step
+        run: |
+          echo "签到成功！有效期已重置为 7 天。"
+          date
